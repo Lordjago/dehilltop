@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <title>Product | DeHillTop</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="brand-logo">
+          <img src="logo.png" alt="brand-logo" />
+          <h1 class="brand-title">DeHillTop</h1>
+        </div>
+        <div class="nav">
+          <ul class="nav-links">
+            <li class="links"><a href="index.html">Home</a></li>
+            <li class="links active"><a href="products.html">Products</a></li>
+            <li class="links">
+              <a href="product_locator.html">Product Locator</a>
+            </li>
+            <li class="links"><a href="about.html">About Us</a></li>
+            <li class="links"><a href="contact.html">Contact</a></li>
+            <button class="btn">Get in Touch</button>
+            
+          </ul>
+          <div class="nav-bar-toggle">
+            <i class="bi bi-list"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product" style="padding-top: 150px;">
+        
+        <div class="product-item">
+            <img src="https://thumbs.dreamstime.com/b/water-dispenser-bottles-three-water-dispenser-bottle-reflective-background-d-illustration-118046903.jpg" alt="">
+            <p class="product-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quos quidem vel voluptatum ullam fugit animi, dolor illo cupiditate nihil perferendis? Modi veritatis quibusdam, aliquam quos delectus autem expedita dolore!</p>
+        </div>
+        <div class="product-item">
+            <p class="product-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quos quidem vel voluptatum ullam fugit animi, dolor illo cupiditate nihil perferendis? Modi veritatis quibusdam, aliquam quos delectus autem expedita dolore!</p>
+            <img src="https://img.freepik.com/premium-vector/plastic-bottle-drinking-water-transparent-illustration-isolated-white-background_110233-2323.jpg?w=2000" alt="">
+        </div>
+        <div class="product-item">
+            <img src="https://thumbs.dreamstime.com/b/water-dispenser-bottles-three-water-dispenser-bottle-reflective-background-d-illustration-118046903.jpg" alt="">
+            <p class="product-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quos quidem vel voluptatum ullam fugit animi, dolor illo cupiditate nihil perferendis? Modi veritatis quibusdam, aliquam quos delectus autem expedita dolore!</p>
+        </div>
+        <div class="product-item">
+            <p class="product-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quos quidem vel voluptatum ullam fugit animi, dolor illo cupiditate nihil perferendis? Modi veritatis quibusdam, aliquam quos delectus autem expedita dolore!</p>
+            <img src="https://img.freepik.com/premium-vector/plastic-bottle-drinking-water-transparent-illustration-isolated-white-background_110233-2323.jpg?w=2000" alt="">
+        </div>
+    </div>
+    <div class="footer">
+       <div class="footer-grid">
+          <div class="item">
+            <img src="logo.png" alt="brand-logo" />
+            <h1 class="brand-title" style="color: #000">DeHillTop</h1>
+            <p>
+              Our Water is one of the leading spring water providers in the USA.
+              We bottle and deliver bacteria-free spring water throughout the
+              country covering all water needs and tastes. We are proud to be
+              the nation’s #1 water provider!
+            </p>
+          </div>
+          <div class="item">
+            <h3 class="footer-head">Contact Information</h3>
+            <div class="items">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p>
+                Plot 116 Hilltop Phase 2 Extension, Post Housing Estate
+                Kurudu-Abuja FCT.
+              </p>
+            </div>
+            <div class="items">
+              <i class="bi bi-telephone-fill"></i>
+              <p>+234 8122 478005</p>
+            </div>
+            <div class="items">
+              <i class="bi bi-envelope-fill"></i>
+              <p>info@dehilltop.com</p>
+            </div>
+          </div>
+          <div class="item">
+            <h3 class="footer-head">Social Media</h3>
+            <p>
+                Please find us on
+            </p>
+            <div class="icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="copy-write">
+          <strong
+            >© 2022 All Rights Reserved. Terms of Use and Privacy Policy</strong
+          >
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+   
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".header");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });   
+
+      const menu = document.querySelector(".nav-bar-toggle");
+      const tabs = document.querySelector(".nav-links");
+
+      menu.addEventListener("click", function () {
+        tabs.classList.toggle("show");
+      });
+      let load = document.querySelector('.preloader');
+      // window.addEventListener('load', () => {
+      //   load.style.display = 'none';
+      // })
+
+      setTimeout(() => {
+        load.style.display = 'none';
+      }, 2000) 
+
+      // document.addEventListener("click", () => {
+      //   tabs.style.display = 'none';
+      // }
+    </script>
+  </body>
+</html>
