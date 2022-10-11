@@ -9,9 +9,14 @@
     <title>Home | DeHillTop</title>
   </head>
   <body>
-  <div class="preloader">
+  <!-- <div class="preloader">
       <img src="preload.gif" alt="">
-  </div>
+  </div> -->
+  <div id="preloader">
+    <div id="status">
+        <div class="spinner">Loading...</div>
+    </div>
+</div>
     <div class="container">
       <div class="header"> 
         <div>
@@ -120,14 +125,14 @@
       menu.addEventListener("click", function () {
         tabs.classList.toggle("show");
       });
-      let load = document.querySelector('.preloader');
+      let load = document.querySelector('#preloader');
       // window.addEventListener('load', () => {
       //   load.style.display = 'none';
       // })
 
       setTimeout(() => {
         load.style.display = 'none';
-      }, 2000) 
+      }, 1500) 
 
       // document.addEventListener("click", () => {
       //   tabs.style.display = 'none';
