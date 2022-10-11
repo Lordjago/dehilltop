@@ -80,7 +80,7 @@ p{
     cursor: pointer;
 }
 .nav-links.show {
-    opacity: 1;
+    display: block;
     transition: all 0.4s ease;
   }
 .nav-bar-toggle i{
