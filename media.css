@@ -13,13 +13,14 @@
     margin-top: 70px;
     background-color: #fff;
     width: 100vw;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     padding: 40px;
-   display: none;
-    transition: 0.2s;
+    display: none;
+    transition: all 0.4s ease-in-out;
     overflow: hidden;
   }
   .nav-links li {

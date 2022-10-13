@@ -22,9 +22,7 @@ p{
     text-align: justify;
     font-size: 14px;
 }
-.container{
-    /* padding: 20px; */
-}
+
 #preloader {
     position: fixed;
     top: 0;
