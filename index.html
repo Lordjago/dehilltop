@@ -126,13 +126,13 @@
         tabs.classList.toggle("show");
       });
       let load = document.querySelector('#preloader');
-      // window.addEventListener('load', () => {
-      //   load.style.display = 'none';
-      // })
-
-      setTimeout(() => {
+      window.addEventListener('load', () => {
         load.style.display = 'none';
-      }, 1500) 
+      })
+
+      // setTimeout(() => {
+      //   load.style.display = 'none';
+      // }, 1500) 
 
       // document.addEventListener("click", () => {
       //   tabs.style.display = 'none';
