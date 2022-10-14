@@ -22,7 +22,7 @@
         <div>
           <a href="index.html" class="brand-logo">
           <img src="./src/images/logo.png" alt="brand-logo" />
-          <h1 class="brand-title">De-HillTop</h1>
+          <h1 class="brand-title">DeHillTop</h1>
         </a>
         </div>
         <div class="nav">
@@ -126,13 +126,13 @@
         tabs.classList.toggle("show");
       });
       let load = document.querySelector('#preloader');
-      window.addEventListener('load', () => {
-        load.style.display = 'none';
-      })
-
-      // setTimeout(() => {
+      // window.addEventListener('load', () => {
       //   load.style.display = 'none';
-      // }, 1500) 
+      // })
+
+      setTimeout(() => {
+        load.style.display = 'none';
+      }, 1500) 
 
       // document.addEventListener("click", () => {
       //   tabs.style.display = 'none';
