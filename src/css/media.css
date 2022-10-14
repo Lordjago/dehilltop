@@ -83,8 +83,12 @@
   .about p {
     font-size: 14px;
   }
-  .process-grid {
+  .process-grid, .value-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .value-grid{
+    padding-left: 20px;
+    padding-right: 20px;
   }
   /* .nav .nav-links {
         width: 50%;
@@ -124,7 +128,7 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  .process-grid {
+  .process-grid, .value-grid {
     grid-template-columns: 1fr;
   }
   .locations {
