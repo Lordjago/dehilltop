@@ -268,6 +268,10 @@ a:hover{
 .footer img{
     width: 50px;
 }
+
+.indent{
+    text-indent: 20px;
+}
 .copy-write{
     padding-top: 20px;
     padding-bottom: 30px;
@@ -428,7 +432,9 @@ a:hover{
     width: 100%;
     height: 400px;
 }
-
+.product-desc{
+    text-indent: 20px;
+}
 .process-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
